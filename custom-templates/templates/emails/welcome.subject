@@ -1,0 +1,6 @@
+{#
+Forest Network invite email subject.
+NOT rendered by MAS — see welcome.html for details. Plain {{ variable }}
+interpolation only.
+-#}
+🌲 Welcome to The Forest Network — here's your invite

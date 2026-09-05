@@ -1,21 +1,33 @@
 # The Forest Network — MAS Email Branding
 
-Custom Forest Network branding for the two user-facing emails sent by
+Custom Forest Network branding for the user-facing emails in the Forest
+Network's Matrix ecosystem: the two emails
 [Matrix Authentication Service](https://github.com/element-hq/matrix-authentication-service)
-(MAS, our Matrix auth/identity server): the registration/email-verification
-code email and the password-recovery email.
+(MAS, our Matrix auth/identity server) sends itself (email-verification and
+password-recovery), plus the invite-welcome email sent by the separate
+`the-forest-network-mas-invite` admin tool.
 
 ## What's in this repo
 
 - **`custom-templates/`** — a full copy of everything MAS's official Docker
   image bundles at `/usr/local/share/mas-cli/` (`templates/`, `assets/`,
-  `manifest.json`), unmodified **except** the 6 email files:
-  - `templates/emails/verification.html` / `.txt` / `.subject`
-  - `templates/emails/recovery.html` / `.txt` / `.subject`
-- **`branding-patch/`** — unified diffs of just those 6 files, against the
-  pristine files as shipped in the image, so the actual customization is
-  reviewable/reapplyable on its own without wading through the ~19MB of
-  vendored frontend assets.
+  `manifest.json`), unmodified **except**:
+  - `templates/emails/verification.html` / `.txt` / `.subject` — rendered by
+    MAS itself
+  - `templates/emails/recovery.html` / `.txt` / `.subject` — rendered by
+    MAS itself
+  - `templates/emails/welcome.html` / `.txt` / `.subject` — **not** rendered
+    by MAS (it has no welcome-email flow). Consumed independently by the
+    private `the-forest-network-mas-invite` repo via a pinned git submodule,
+    rendered there with `nunjucks`. Kept here so all Forest Network email
+    design has one source of truth. Uses only plain `{{ variable }}`
+    interpolation — none of MAS's template globals (`_()`, `branding`,
+    `lang`) are available outside MAS's own render pipeline.
+- **`branding-patch/`** — unified diffs of the 6 MAS-rendered email files,
+  against the pristine files as shipped in the image, so the actual
+  customization is reviewable/reapplyable on its own without wading through
+  the ~19MB of vendored frontend assets. (`welcome.*` isn't a patch against
+  anything upstream — it's original content, not covered here.)
 
 ## Why the whole tree, not just the 6 edited files
 
@@ -68,7 +80,12 @@ To upgrade:
    changed — these 6 files change upstream rarely, so this should be
    uncommon. Re-review the file and manually reapply the branding, then
    regenerate the `.patch` file from the new diff.
-5. Commit, push, and redeploy the MAS container(s) that mount this
+5. Re-add `templates/emails/welcome.html` / `.txt` / `.subject` — step 2's
+   `docker cp` overwrites the whole `templates/` tree with MAS's pristine
+   bundle, which doesn't include these 3 files (they aren't part of MAS at
+   all). Restore them from git (`git checkout -- custom-templates/templates/emails/welcome.*`)
+   before committing, or they'll silently disappear.
+6. Commit, push, and redeploy the MAS container(s) that mount this
    directory.
 
 ## Deployment
@@ -79,9 +96,9 @@ deploying an update is just `git pull` in that checkout followed by a
 container restart — no config or compose changes needed as long as the
 directory layout here doesn't change.
 
-As of writing, this is wired into a throwaway test stack (`tfn-test-*`
-containers, `/media-server/config/tfn-test/mas/`) that will be torn down
-once the MAS deployment is validated — those specific container/path names
-are not permanent and shouldn't be relied on. Production MAS (`tfn-mas`) is
-**not** wired to this repo yet; once the test stack is torn down and this
-gets pointed at production, update this section with the real path.
+This repo is checked out at `/media-server/config/tfn/mas/the-forest-network-mas-branding`
+on the host, which is what production MAS (`tfn-mas`, `config/tfn/mas/config.yaml`'s
+`templates.path`) mounts and reads from — it's live, not a test stack. A
+separate `tfn-test-*` stack (`config/tfn-test/`, `docker-compose.yml`) still
+exists alongside it, marked "safe to delete once validated" — that's a
+leftover validation stack, not where this repo is deployed.

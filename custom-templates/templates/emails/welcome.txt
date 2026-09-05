@@ -1,0 +1,26 @@
+{#
+Forest Network invite email, plain-text part.
+NOT rendered by MAS — see welcome.html for details. Plain {{ variable }}
+interpolation only.
+
+Variables: register_url, token, expires_date
+-#}
+THE FOREST NETWORK
+------------------
+
+You've been invited to join The Forest Network.
+
+To create your account, go to:
+
+    {{ register_url }}
+
+When asked for a registration token, enter:
+
+    {{ token }}
+
+This token can only be used once and expires on {{ expires_date }}.
+
+If you weren't expecting this invite, you can safely ignore this email.
+
+--
+theforestnetwork.earth
