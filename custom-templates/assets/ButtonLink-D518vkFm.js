@@ -1,0 +1,2 @@
+import{n as e}from"./rolldown-runtime-Bh1tDfsg.js";import{n as t,t as n}from"./jsx-runtime-BHz_hoGM.js";import{n as r}from"./link-C5HcoTdL.js";import{f as i}from"./useTranslation-CvpQbuHy.js";import{t as a}from"./Button-BsQwiPxy.js";var o=e(t(),1),s=e(i(),1),c={buttonLink:`_button-link_x5txo_8`},l=n(),u=r((0,o.forwardRef)(({children:e,className:t,...n},r)=>{let i=!!n.disabled||!!n[`aria-disabled`]||!1;return(0,l.jsx)(a,{as:`a`,...n,className:(0,s.default)(c.buttonLink,t),disabled:i,ref:r,children:e})}));export{u as t};
+//# sourceMappingURL=ButtonLink-D518vkFm.js.map

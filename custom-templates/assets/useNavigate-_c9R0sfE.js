@@ -1,0 +1,2 @@
+import{n as e}from"./rolldown-runtime-Bh1tDfsg.js";import{n as t}from"./jsx-runtime-BHz_hoGM.js";import{o as n,t as r}from"./useRouter-B9Ekf4jx.js";var i=e(t(),1);function a(e){let t=r();return i.useCallback(n=>t.navigate({...n,from:n.from??e?.from}),[e?.from,t])}function o(e){let t=r(),o=a(),s=i.useRef(null);return n(()=>{s.current!==e&&(o(e),s.current=e)},[t,e,o]),null}export{a as n,o as t};
+//# sourceMappingURL=useNavigate-_c9R0sfE.js.map

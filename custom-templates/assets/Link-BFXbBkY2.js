@@ -1,0 +1,2 @@
+import{n as e}from"./rolldown-runtime-Bh1tDfsg.js";import{n as t,t as n}from"./jsx-runtime-BHz_hoGM.js";import{f as r}from"./useTranslation-CvpQbuHy.js";var i={link:`_link_k9ljz_8`},a=e(r(),1),o=e(t(),1),s=n(),c=(0,o.forwardRef)(function({children:e,className:t,kind:n=`primary`,size:r=`md`,...o},c){return(0,s.jsx)(`a`,{ref:c,...o,rel:`noreferrer noopener`,className:(0,a.default)(i.link,t),"data-kind":n,"data-size":r,children:e})});export{c as t};
+//# sourceMappingURL=Link-BFXbBkY2.js.map

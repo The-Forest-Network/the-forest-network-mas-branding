@@ -1,0 +1,19 @@
+--- /tmp/claude-1000/-media-server/457c4af5-b9fe-42ea-ae8c-a5cda5a8b1f5/scratchpad/mas-extract/mas-cli/templates/emails/recovery.txt	2026-08-19 02:35:29.000000000 +1000
++++ custom-templates/templates/emails/recovery.txt	2026-09-05 10:27:10.268273105 +1000
+@@ -7,6 +7,9 @@
+ -#}
+ 
+ {%- set _ = translator(lang) -%}
++THE FOREST NETWORK
++------------------
++
+ {{ _("mas.emails.recovery.headline", server_name=branding.server_name) }}
+ 
+ {{ _("mas.emails.recovery.copy_link") }}
+@@ -14,3 +17,6 @@
+     {{ recovery_link }}
+ 
+ {{ _("mas.emails.recovery.you_can_ignore") }}
++
++--
++test-auth.theforestnetwork.earth

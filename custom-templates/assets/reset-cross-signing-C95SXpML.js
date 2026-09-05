@@ -1,0 +1,2 @@
+import{t as e}from"./jsx-runtime-BHz_hoGM.js";import{n as t}from"./Match-Bi0Dx331.js";import{t as n}from"./Layout-CAUYrzwY.js";var r=e(),i=()=>(0,r.jsx)(n,{children:(0,r.jsx)(t,{})});export{i as component};
+//# sourceMappingURL=reset-cross-signing-C95SXpML.js.map

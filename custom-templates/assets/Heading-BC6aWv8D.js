@@ -1,0 +1,2 @@
+import"./rolldown-runtime-Bh1tDfsg.js";import{n as e,t}from"./jsx-runtime-BHz_hoGM.js";import{n,t as r}from"./Text-5cGdO1lY.js";e();var i=t(),a=({as:e=`h1`,children:t,...r})=>(0,i.jsx)(n,{as:e,type:`heading`,...r,children:t}),o=({children:e,...t})=>(0,i.jsx)(a,{as:`h3`,weight:`semibold`,size:`md`,...t,children:e}),s=({children:e,...t})=>(0,i.jsx)(a,{as:`h4`,weight:`semibold`,size:`sm`,...t,children:e}),c=({children:e,...t})=>(0,i.jsx)(r,{as:`h5`,weight:`semibold`,size:`lg`,...t,children:e});export{a as i,s as n,c as r,o as t};
+//# sourceMappingURL=Heading-BC6aWv8D.js.map

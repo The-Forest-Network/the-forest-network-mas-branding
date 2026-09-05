@@ -1,0 +1,2 @@
+import{n as e}from"./rolldown-runtime-Bh1tDfsg.js";import{n as t,t as n}from"./jsx-runtime-BHz_hoGM.js";import{f as r}from"./useTranslation-CvpQbuHy.js";var i=e(t(),1),a=e(r(),1),o={separator:`_separator_1qgmy_7`,section:`_section_1qgmy_11`},s=n(),c=(0,i.forwardRef)(({kind:e,className:t,...n},r)=>(0,s.jsx)(`div`,{"aria-orientation":`horizontal`,role:`separator`,className:(0,a.default)(o.separator,e===`section`&&o.section,t),...n,ref:r}));export{c as t};
+//# sourceMappingURL=Separator-HVVfTnrU.js.map

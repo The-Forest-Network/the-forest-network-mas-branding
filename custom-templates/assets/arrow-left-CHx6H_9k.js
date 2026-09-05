@@ -1,0 +1,2 @@
+import{n as e}from"./rolldown-runtime-Bh1tDfsg.js";import{n as t,t as n}from"./jsx-runtime-BHz_hoGM.js";var r=e(t(),1),i=n();function a(e,t){return(0,i.jsx)(`svg`,{xmlns:`http://www.w3.org/2000/svg`,width:`1em`,height:`1em`,fill:`currentColor`,viewBox:`0 0 24 24`,ref:t,...e,children:(0,i.jsx)(`path`,{d:`M12.207 5.293a1 1 0 0 1 0 1.414L7.914 11H18.5a1 1 0 1 1 0 2H7.914l4.293 4.293a1 1 0 0 1-1.414 1.414l-6-6a1 1 0 0 1 0-1.414l6-6a1 1 0 0 1 1.414 0`})})}a.displayName=`ArrowLeftIcon`;var o=(0,r.forwardRef)(a);export{o as t};
+//# sourceMappingURL=arrow-left-CHx6H_9k.js.map
