@@ -73,13 +73,15 @@ To upgrade:
 
 ## Deployment
 
-This repo is checked out directly at the path MAS's `templates.path` and
-`templates.assets_manifest` config point at (currently, on the test stack,
-`/media-server/config/tfn-test/mas/custom-templates/`, bind-mounted into the
-`tfn-test-mas` container as `/data/custom-templates`). Deploying an update is
-just `git pull` in that checkout followed by a container restart — no
-config or compose changes needed as long as the directory layout here
-doesn't change.
+The general pattern: check this repo out directly at the path MAS's
+`templates.path` and `templates.assets_manifest` config point at, so
+deploying an update is just `git pull` in that checkout followed by a
+container restart — no config or compose changes needed as long as the
+directory layout here doesn't change.
 
-Production MAS (`tfn-mas`) is **not** wired to this repo yet — this is test
-stack only, pending sign-off.
+As of writing, this is wired into a throwaway test stack (`tfn-test-*`
+containers, `/media-server/config/tfn-test/mas/`) that will be torn down
+once the MAS deployment is validated — those specific container/path names
+are not permanent and shouldn't be relied on. Production MAS (`tfn-mas`) is
+**not** wired to this repo yet; once the test stack is torn down and this
+gets pointed at production, update this section with the real path.
