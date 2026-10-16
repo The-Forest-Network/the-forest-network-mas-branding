@@ -16,4 +16,4 @@
  {{ _("mas.emails.recovery.you_can_ignore") }}
 +
 +--
-+test-auth.theforestnetwork.earth
++auth.theforestnetwork.earth

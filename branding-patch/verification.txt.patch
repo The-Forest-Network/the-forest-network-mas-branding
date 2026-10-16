@@ -12,4 +12,4 @@
  {{ _("mas.emails.verify.body_text", code=authentication_code.code) }}
 +
 +--
-+test-auth.theforestnetwork.earth
++auth.theforestnetwork.earth
