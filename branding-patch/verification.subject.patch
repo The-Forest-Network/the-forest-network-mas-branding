@@ -5,4 +5,4 @@
  {%- set _ = translator(lang) -%}
  
 -{{ _("mas.emails.verify.subject", code=authentication_code.code) }}
-+🌲 {{ _("mas.emails.verify.subject", code=authentication_code.code) }}
++The Forest Network: {{ _("mas.emails.verify.subject", code=authentication_code.code) }}

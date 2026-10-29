@@ -3,7 +3,7 @@ Forest Network invite email, plain-text part.
 NOT rendered by MAS — see welcome.html for details. Plain {{ variable }}
 interpolation only.
 
-Variables: register_url, token, expires_date
+Variables: token, expires_date
 -#}
 THE FOREST NETWORK
 ------------------
@@ -12,17 +12,41 @@ Meet us at the Trailhead.
 
 The Forest Network is a global Digital Village for people engaged in
 nature and soul work. You can use this registration token to create
-your account and join us in the Village.
+your account and join us in the Village. We can't wait to welcome you!
 
-To create your account, go to:
-
-    {{ register_url }}
-
-When asked for a registration token, enter:
+Your registration token:
 
     {{ token }}
 
 This token can only be used once and expires on {{ expires_date }}.
+
+ON YOUR PHONE
+1. Install the Forest Network app for iOS or Android.
+2. Tap "Sign in to matrix.theforestnetwork.earth".
+3. Follow the steps to create your account, and enter your registration
+   token when asked.
+4. Along the way, you'll be asked for a verification code from a separate
+   email titled "Your email verification code", which may arrive before this
+   email. That code is used to verify your email address and is different
+   from the registration token above, which is only used once when you
+   create your account.
+
+IN YOUR WEB BROWSER (ELEMENT X)
+1. Open the Element X web client.
+2. When asked for your server, enter matrix.theforestnetwork.earth.
+3. Follow the steps to create your account, and enter your registration
+   token when asked.
+4. Along the way, you'll be asked for a verification code from a separate
+   email titled "Your email verification code", which may arrive before this
+   email. That code is used to verify your email address and is different
+   from the registration token above, which is only used once when you
+   create your account.
+
+IMPORTANT: please set up and save a recovery key.
+Without one, you'll lose your direct messages and message history in any
+private channels if you ever switch devices.
+Set one up as soon as you sign in, and keep it somewhere safe, like a
+password manager.
 
 If you weren't expecting this invite, you can safely ignore this email.
 
