@@ -19,4 +19,4 @@ THE FOREST NETWORK
 {{ _("mas.emails.recovery.you_can_ignore") }}
 
 --
-auth.theforestnetwork.earth
+theforestnetwork.earth

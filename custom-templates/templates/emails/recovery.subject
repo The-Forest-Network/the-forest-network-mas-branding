@@ -11,4 +11,4 @@ Please see LICENSE files in the repository root for full details.
     @{{ user.username }}:{{ branding.server_name }}
 {%- endset -%}
 
-🌲 {{ _("mas.emails.recovery.subject", mxid=mxid) }}
+The Forest Network: {{ _("mas.emails.recovery.subject", mxid=mxid) }}

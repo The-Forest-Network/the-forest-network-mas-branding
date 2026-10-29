@@ -22,4 +22,4 @@ THE FOREST NETWORK
 {{ _("mas.emails.verify.body_text", code=authentication_code.code) }}
 
 --
-auth.theforestnetwork.earth
+theforestnetwork.earth

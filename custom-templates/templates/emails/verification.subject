@@ -8,4 +8,4 @@ Please see LICENSE files in the repository root for full details.
 
 {%- set _ = translator(lang) -%}
 
-🌲 {{ _("mas.emails.verify.subject", code=authentication_code.code) }}
+The Forest Network: {{ _("mas.emails.verify.subject", code=authentication_code.code) }}

@@ -5,4 +5,4 @@
  {%- endset -%}
  
 -{{ _("mas.emails.recovery.subject", mxid=mxid) }}
-+🌲 {{ _("mas.emails.recovery.subject", mxid=mxid) }}
++The Forest Network: {{ _("mas.emails.recovery.subject", mxid=mxid) }}

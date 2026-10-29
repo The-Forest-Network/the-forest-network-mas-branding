@@ -20,42 +20,43 @@ only markup/CSS around them changed.
 <meta name="color-scheme" content="dark light">
 <meta name="supported-color-schemes" content="dark light">
 <title>The Forest Network</title>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600&display=swap" rel="stylesheet" type="text/css">
 <style type="text/css">
   body, table, td { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
-  a#button:hover { background-color: #5a7d40!important; }
-  a#button:active { background-color: #3d5a2a!important; }
+  a#button:hover { background-color: #8a9268!important; }
+  a#button:active { background-color: #6c7350!important; }
 </style>
 </head>
-<body style="margin:0; padding:0; background-color:#0b1208; font-family: Georgia, 'Times New Roman', serif;">
-  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#0b1208;">
+<body style="margin:0; padding:0; background-color:#14150f; font-family: 'Figtree', ui-rounded, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#14150f;">
     <tr>
       <td align="center" style="padding: 32px 16px;">
-        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:480px; background-color:#111c0c; border:1px solid #2c3a20; border-radius:10px;">
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:480px; background-color:#1d2016; border:1px solid #34381f; border-radius:10px;">
           <tr>
-            <td align="center" style="padding: 30px 32px 22px; border-bottom:1px solid #2c3a20;">
-              <img src="https://theforestnetwork.earth/favicon.svg" width="36" height="36" alt="The Forest Network" style="display:block; margin:0 auto 10px; border:0;" />
-              <div style="color:#f0f7e6; font-size:13px; letter-spacing:4px; text-transform:uppercase; font-family: Georgia, 'Times New Roman', serif;">The Forest Network</div>
+            <td align="center" style="padding: 30px 32px 22px; border-bottom:1px solid #34381f;">
+              <img src="https://theforestnetwork.earth/mobile-icon.png" width="72" height="72" alt="The Forest Network" style="display:block; margin:0 auto 12px; border:0; border-radius:50%;" />
+              <div style="color:#f3ecd9; font-size:13px; letter-spacing:4px; text-transform:uppercase; font-family: 'Figtree', ui-rounded, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;">The Forest Network</div>
             </td>
           </tr>
           <tr>
             <td style="padding: 32px;">
-              <p style="margin:0 0 24px; color:#c8d8b0; font-size:15px; line-height:1.7; font-family: Georgia, 'Times New Roman', serif;">
+              <p style="margin:0 0 24px; color:#c7cdac; font-size:15px; line-height:1.7; font-family: 'Figtree', ui-rounded, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;">
                 {{ _("mas.emails.recovery.headline", server_name=branding.server_name) }}
               </p>
-              <p style="margin:0 0 20px; color:#c8d8b0; font-size:15px; line-height:1.7; font-family: Georgia, 'Times New Roman', serif;">
+              <p style="margin:0 0 20px; color:#c7cdac; font-size:15px; line-height:1.7; font-family: 'Figtree', ui-rounded, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;">
                 {{ _("mas.emails.recovery.click_button") }}
               </p>
               <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin:0 0 26px;">
                 <tr>
-                  <td align="center" style="border-radius:6px; background-color:#4a6b32;">
+                  <td align="center" style="border-radius:6px; background-color:#535946;">
                     <a id="button" href="{{ recovery_link }}" target="_blank" style="
                       display: inline-block;
-                      font-family: Georgia, 'Times New Roman', serif;
+                      font-family: 'Figtree', ui-rounded, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;
                       font-size: 15px;
                       font-weight: bold;
                       letter-spacing: 1px;
-                      color: #f0f7e6;
-                      background-color: #4a6b32;
+                      color: #f3ecd9;
+                      background-color: #535946;
                       padding: 14px 30px;
                       border-radius: 6px;
                       text-decoration: none;
@@ -63,21 +64,21 @@ only markup/CSS around them changed.
                   </td>
                 </tr>
               </table>
-              <p style="margin:0 0 6px; color:#8fa876; font-size:13px; line-height:1.6; font-family: Georgia, 'Times New Roman', serif;">
+              <p style="margin:0 0 6px; color:#b9b39e; font-size:13px; line-height:1.6; font-family: 'Figtree', ui-rounded, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;">
                 {{ _("mas.emails.recovery.fallback") }} {{ _("mas.emails.recovery.copy_link") }}
               </p>
               <p style="margin:0 0 20px; font-size:13px; line-height:1.5; word-break:break-all;">
-                <a href="{{ recovery_link }}" target="_blank" style="color:#a8c480;">{{ recovery_link }}</a>
+                <a href="{{ recovery_link }}" target="_blank" style="color:#8a9268;">{{ recovery_link }}</a>
               </p>
-              <p style="margin:0; color:#8fa876; font-size:13px; line-height:1.6; font-family: Georgia, 'Times New Roman', serif;">
+              <p style="margin:0; color:#b9b39e; font-size:13px; line-height:1.6; font-family: 'Figtree', ui-rounded, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;">
                 {{ _("mas.emails.recovery.you_can_ignore") }}
               </p>
             </td>
           </tr>
           <tr>
-            <td style="padding: 18px 32px 30px; border-top:1px solid #2c3a20;">
-              <p style="margin:0; color:#8fa876; font-size:11px; letter-spacing:1px; text-align:center; font-family: Georgia, 'Times New Roman', serif;">
-                The Forest Network &middot; auth.theforestnetwork.earth
+            <td style="padding: 18px 32px 30px; border-top:1px solid #34381f;">
+              <p style="margin:0; color:#b9b39e; font-size:11px; letter-spacing:1px; text-align:center; font-family: 'Figtree', ui-rounded, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;">
+                theforestnetwork.earth
               </p>
             </td>
           </tr>
