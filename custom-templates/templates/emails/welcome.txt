@@ -26,9 +26,10 @@ ON YOUR PHONE
 3. Follow the steps to create your account, and enter your registration
    token when asked.
 4. Along the way, you'll be asked for a verification code from a separate
-   email titled "Your email verification code". That code is used to verify your
-   email address and is different from the registration token above, which
-   is only used once when you create your account.
+   email titled "Your email verification code", which may arrive before this
+   email. That code is used to verify your email address and is different
+   from the registration token above, which is only used once when you
+   create your account.
 
 IN YOUR WEB BROWSER (ELEMENT X)
 1. Open the Element X web client.
@@ -36,9 +37,10 @@ IN YOUR WEB BROWSER (ELEMENT X)
 3. Follow the steps to create your account, and enter your registration
    token when asked.
 4. Along the way, you'll be asked for a verification code from a separate
-   email titled "Your email verification code". That code is used to verify your
-   email address and is different from the registration token above, which
-   is only used once when you create your account.
+   email titled "Your email verification code", which may arrive before this
+   email. That code is used to verify your email address and is different
+   from the registration token above, which is only used once when you
+   create your account.
 
 IMPORTANT: please set up and save a recovery key.
 Without one, you'll lose your direct messages and message history in any
